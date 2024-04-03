@@ -1,0 +1,21 @@
+print("Vítej, pokud chceš končit napiš ´konec´ . ")
+while True:
+    cislo1 = float(input("zadej první číslo:" ))
+    cislo2 = float(input("zadej druhé číslo:" ))
+    operace = input("zadej operaci ´+, -, *, /, **´")
+    if operace == "+":
+        print(cislo1 + cislo2)
+    elif operace == "-":
+        print(cislo1 - cislo2)
+    elif operace == "*":
+        print(cislo1 * cislo2)
+    elif (cislo1 == 0 or cislo2 == 0 ) and operace == "/":
+        print("nulou nelze dělit")
+    elif operace == "/":
+        print(cislo1 / cislo2)
+    elif operace == "**":
+        print(cislo1 ** cislo2)
+    elif operace == "konec":
+        print("Děkuji za využití kalkulačky")
+        break
+    
